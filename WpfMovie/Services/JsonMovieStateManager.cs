@@ -38,7 +38,7 @@ namespace WpfMovie.Services
         /// </summary>
         public Movie Deserialize(string movieString)
         {
-            if (string.IsNullOrWhiteSpace(movieString)) throw new ArgumentException("Value cannot be null or empty", nameof(movieString));
+            if (string.IsNullOrWhiteSpace(movieString)) throw new ArgumentException("Value cannot be null, empty, or whitespace", nameof(movieString));
             var bytes = Convert.FromBase64String(movieString);
             var json = System.Text.Encoding.UTF8.GetString(bytes);
             var movie = JsonConvert.DeserializeObject<Movie>(json, _settings);
