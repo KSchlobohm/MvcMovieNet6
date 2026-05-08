@@ -1,5 +1,7 @@
 # MvcMovieSampleNet6
 
+> **Repository status:** This GitHub repository is kept as a frozen demo baseline. Make changes in local branches or forks rather than proposing updates here.
+
 This repository hosts a .NET 6 web app derived from the ASP.NET Core MVC movie sample. It demonstrates fundamental practices for building an MVC application, including models, views, and controllers.
 
 ## Purpose
